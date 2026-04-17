@@ -27,6 +27,7 @@
 <script>
 Dos(document.getElementById("dos"), {
   url: "doom.jsdos",
+  persist: true,
   onEvent: function (event) {
     if (event === "ci-ready") {
       this.commandInterface.exec("doom");
